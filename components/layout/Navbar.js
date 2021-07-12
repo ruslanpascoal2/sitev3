@@ -1,9 +1,17 @@
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export const Navbar = () => {
     const { theme, setTheme } = useTheme();
+    const [clientTheme, setClientTheme] = useState();
+
+    useEffect(()=> {
+        setClientTheme(theme);
+    })
+
     return (
         <header className="z-50 mb-3 flex items-center w-full fixed py-6 bg-light dark:bg-dark">
             <nav className="container mx-auto px-10">
@@ -30,9 +38,9 @@ export const Navbar = () => {
                                 aria-label="Toggle Dark Mode"
                                 type="button"
                                 className="pt-1 hover:text-accent"
-                                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                                onClick={() => setTheme(clientTheme === 'dark' ? 'light' : 'dark')}
                             >
-                                {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                                {clientTheme === 'dark' ? <FaSun /> : <FaMoon />}
                             </button>
                         </li>
                     </div>
