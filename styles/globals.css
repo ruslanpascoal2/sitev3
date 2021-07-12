@@ -19,6 +19,9 @@
     a {
         @apply hover:text-accent;
     }
+    button{
+        @apply focus:outline-none focus:shadow-none;
+    }
 }
 
 :root {

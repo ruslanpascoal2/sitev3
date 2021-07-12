@@ -5,8 +5,8 @@ import { ThemeProvider } from 'next-themes'
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <Navbar></Navbar>
-      <main className="container mx-auto px-4 pt-32 bg-light dark:bg-dark">
+     <Navbar></Navbar>
+      <main className="container px-10 mx-auto pt-32 bg-light dark:bg-dark">
         <Component {...pageProps} />
       </main>
     </ThemeProvider>
