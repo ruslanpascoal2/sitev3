@@ -7,7 +7,7 @@ export default function Bio() {
     return (
         <div className="pt-20 flex flex-col space-y-4">
             <Avatar size="200px" />
-            <h3 >I'm a front end engineer from Goiânia, Brazil.</h3>
+            <h3 >I&apos;m a front end engineer from Goiânia, Brazil.</h3>
             <h4>Currently working at Raro Labs.</h4>
             <div className="flex">
                 <h4>I have experience working with</h4> &nbsp;
