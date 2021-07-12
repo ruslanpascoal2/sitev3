@@ -16,7 +16,7 @@ export const Post = ({ post }) => {
                     <div className="my-6 flex items-center space-x-6">
                         <Link href="/bio"><a><Avatar /></a></Link>
                         <Link href="/bio"><a><span>Ruslan A. Pascoal</span></a></Link>
-                        <a target="_blank" href="https://bit.ly/3i1jLoT"><AiFillLinkedin className="text-xl  hover:text-accent cursor-pointer" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://bit.ly/3i1jLoT"><AiFillLinkedin className="text-xl  hover:text-accent cursor-pointer" /></a>
                     </div>
                 </section>
                 <section className="my-6">

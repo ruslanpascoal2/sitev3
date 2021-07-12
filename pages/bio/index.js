@@ -22,7 +22,7 @@ export default function Bio() {
                 <h4>Take a look at my</h4> &nbsp;
                 <Link href="/portfolio"><a><h4><u>Portfolio</u>.</h4></a></Link>
             </div>
-            <div className="flex items-center text-xl">Contact me on <a target="_blank" href="https://www.linkedin.com/in/ruslan-pascoal-561214a0/"><AiFillLinkedin className="ml-1 text-2xl" /></a></div>
+            <div className="flex items-center text-xl">Contact me on <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/ruslan-pascoal-561214a0/"><AiFillLinkedin className="ml-1 text-2xl" /></a></div>
         </div>
     )
 }
