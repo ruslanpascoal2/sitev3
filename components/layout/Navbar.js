@@ -27,11 +27,7 @@ export const Navbar = () => {
                                 <a>Bio</a>
                             </Link>
                         </li>
-                        <li>
-                            <Link href="/portfolio">
-                                <a>Portfolio</a>
-                            </Link>
-                        </li>
+                       
 
                         <li>
                             <button

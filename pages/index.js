@@ -3,8 +3,9 @@ import { useEffect } from "react";
 import { Post } from "../components/blog/Post";
 import BackToTop from "../components/layout/BackToTop";
 import { getAllPosts } from "../scripts/blog/getAllPosts";
+import Bio from "./bio";
 
-export default function Home({ posts }) {
+export default function Home() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
@@ -22,9 +23,7 @@ export default function Home({ posts }) {
 
   return (
     <div>
-      {
-        posts.map(post => <Post key={post.metadata.slug} post={post}></Post>)
-      }
+      <Bio/>
       {
         scrollPosition > 100 ?
         <BackToTop /> : 
