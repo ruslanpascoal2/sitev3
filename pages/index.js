@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="pb-20">
       <Bio/>
       {
         scrollPosition > 100 ?
